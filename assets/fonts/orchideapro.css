@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'Orchidea Pro';
+	src: local('Orchidea Pro Medium'), local('OrchideaPro-Medium'), url('Orchideapromedium.woff2') format('woff2'), url('Orchideapromedium.woff') format('woff'), url('Orchideapromedium.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Orchidea Pro';
+	src: local('Orchidea Pro Medium Italic'), local('OrchideaPro-MediumItalic'), url('Orchideapromediumitalic.woff2') format('woff2'), url('Orchideapromediumitalic.woff') format('woff'), url('Orchideapromediumitalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Orchidea Pro';
+	src: local('Orchidea Pro Extra Light'), local('Orchidea-Pro-Extra-Light'),
+		url('OrchideaPro-ExtraLight.woff2') format('woff2'),
+		url('OrchideaPro-ExtraLight.woff') format('woff'),
+		url('OrchideaPro-ExtraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
