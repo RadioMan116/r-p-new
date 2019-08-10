@@ -10754,7 +10754,7 @@ $(document).ready(function () {
 	});
 	var galleryTop = new Swiper('.gallery-top', {
 		spaceBetween: 10,
-		allowTouchMove: false,
+		// allowTouchMove: false,
 		// navigation: {
 		// 	nextEl: '.gallery-top .swiper-button-next',
 		// 	prevEl: '.gallery-top .swiper-button-prev',
@@ -10763,7 +10763,7 @@ $(document).ready(function () {
 			swiper: galleryThumbs
 		}
 	});
-	var swiper = new Swiper('.services__children-container', {
+	var swiper4 = new Swiper('.services__children-container', {
 		effect: 'cube',
 		grabCursor: true,
 		cubeEffect: {
@@ -10812,7 +10812,7 @@ $(document).ready(function () {
 	});
 
 	var token = '2025232371.1677ed0.ade052bc379842c09ee22809a5e84d21',
-		num_photos = 10;
+		num_photos = 12;
 
 	$.ajax({
 		url: 'https://api.instagram.com/v1/users/self/media/recent',
@@ -10825,19 +10825,7 @@ $(document).ready(function () {
 		success: function (data) {
 			console.log(data);
 			for (x in data.data) {
-				$('#rudr_instafeed .swiper-wrapper').append('<div class="swiper-slide"><a data-fancybox="photo" href="' + data.data[x].images.standard_resolution.url + '"><img src="' + data.data[x].images.thumbnail.url + '"></a></div>');
-				var swiper5 = new Swiper('#rudr_instafeed.swiper-container', {
-					slidesPerView: 5,
-					spaceBetween: 0,
-					pagination: {
-						el: '#rudr_instafeed .swiper-pagination'
-					},
-					navigation: {
-
-						nextEl: '#rudr_instafeed .swiper-button-next',
-						prevEl: '#rudr_instafeed .swiper-button-prev',
-					},
-				});
+				$('.items').append('<a data-fancybox="photo2" href="' + data.data[x].images.standard_resolution.url + '"><img src="' + data.data[x].images.thumbnail.url + '"></a></<a>');
 			}
 		},
 		error: function (data) {
